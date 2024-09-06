@@ -43,7 +43,6 @@
             this.botonVer.TabIndex = 0;
             this.botonVer.Text = "Ver números";
             this.botonVer.UseVisualStyleBackColor = true;
-            this.botonVer.Click += new System.EventHandler(this.botonVer_Click);
             // 
             // textBox1
             // 
@@ -82,7 +81,6 @@
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Problema2Form1";
             this.Text = "Problema2";
-            this.Load += new System.EventHandler(this.Problema2Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
