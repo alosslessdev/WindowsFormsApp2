@@ -17,8 +17,12 @@ namespace WindowsFormsApp3
             InitializeComponent();
         }
 
-<<<<<<< HEAD:WindowsFormsApp3/Problema2Form1.cs
         private int i, j, y, x, numeroAlRevesInt, numeroAlDerechoInt, resultado1, resultado2;
+
+
+
+        private string entrada, numeroAlRevesString, numeroAlDerechoString;
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -26,7 +30,7 @@ namespace WindowsFormsApp3
             {
                 //para cada numero natural hasta el numero del usuario
 
-                for (j = 0; j <= textBox1.TextLength-1; j++)
+                for (j = 0; j <= textBox1.TextLength - 1; j++)
                 {   //revisar numero desde indice 0/izquierda
 
                     numeroAlDerechoString = String.Join("", textBox1.Text[j]);
@@ -36,7 +40,7 @@ namespace WindowsFormsApp3
 
                 }
 
-                for (x = textBox1.TextLength-1; x >= 0; x--)
+                for (x = textBox1.TextLength - 1; x >= 0; x--)
                 {   //revisar numero desde el ultimo indice/derecha
 
                     numeroAlRevesString = String.Join("", textBox1.Text[x]);
@@ -51,7 +55,7 @@ namespace WindowsFormsApp3
                 {
                     //si se lee igual desde derecha y desde izquierda
 
-                    listBox1.Items.Add(resultado1);
+                    listBox2.Items.Add(resultado1);
                     //no deberia importar si el numero sale de numeroAlDerechoString o de
                     //numeroAlRevesString
 
@@ -60,10 +64,6 @@ namespace WindowsFormsApp3
             }
         }
 
-        private int[] arregloOriginal;
-        private int[] arregloCopia;
-
-        private string entrada, numeroAlRevesString, numeroAlDerechoString;
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -73,13 +73,7 @@ namespace WindowsFormsApp3
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
-=======
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form2 nuevoForm = new Form2();
-            nuevoForm.Show();
-            this.Hide();
->>>>>>> c9d28b296167b1a6bd1660776324dc59d9d858a1:WindowsFormsApp3/Form1.cs
+
         }
     }
 }
