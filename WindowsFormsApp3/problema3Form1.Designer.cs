@@ -36,6 +36,8 @@
             this.txtDepositar = new System.Windows.Forms.TextBox();
             this.txtCedula = new System.Windows.Forms.TextBox();
             this.btAceptar = new System.Windows.Forms.Button();
+            this.txtPlazo = new System.Windows.Forms.TextBox();
+            this.lbPlazo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbTitulo
@@ -77,7 +79,6 @@
             this.lbDepositar.Size = new System.Drawing.Size(91, 20);
             this.lbDepositar.TabIndex = 3;
             this.lbDepositar.Text = "Depositar";
-            this.lbDepositar.Click += new System.EventHandler(this.lb4_Click);
             // 
             // txtNombre
             // 
@@ -104,7 +105,6 @@
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(100, 22);
             this.txtCedula.TabIndex = 6;
-            this.txtCedula.TextChanged += new System.EventHandler(this.txtCedula_TextChanged);
             // 
             // btAceptar
             // 
@@ -119,11 +119,31 @@
             this.btAceptar.UseVisualStyleBackColor = false;
             this.btAceptar.Click += new System.EventHandler(this.btAceptar_Click);
             // 
-            // lbLab3
+            // txtPlazo
+            // 
+            this.txtPlazo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPlazo.Location = new System.Drawing.Point(549, 203);
+            this.txtPlazo.Name = "txtPlazo";
+            this.txtPlazo.Size = new System.Drawing.Size(100, 22);
+            this.txtPlazo.TabIndex = 8;
+            // 
+            // lbPlazo
+            // 
+            this.lbPlazo.AutoSize = true;
+            this.lbPlazo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPlazo.Location = new System.Drawing.Point(439, 205);
+            this.lbPlazo.Name = "lbPlazo";
+            this.lbPlazo.Size = new System.Drawing.Size(56, 20);
+            this.lbPlazo.TabIndex = 9;
+            this.lbPlazo.Text = "Plazo";
+            // 
+            // LbLab3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(834, 467);
+            this.Controls.Add(this.lbPlazo);
+            this.Controls.Add(this.txtPlazo);
             this.Controls.Add(this.btAceptar);
             this.Controls.Add(this.txtCedula);
             this.Controls.Add(this.txtDepositar);
@@ -133,8 +153,9 @@
             this.Controls.Add(this.lbNombre);
             this.Controls.Add(this.lbTitulo);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Name = "lbLab3";
-            this.Text = "\r\nLaboratorio #3 Ciclos de repetición\r\n";
+            this.Name = "LbLab3";
+            this.Text = "Laboratorio #3 Ciclos de repetición";
+            this.Load += new System.EventHandler(this.LbLab3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,6 +171,8 @@
         private System.Windows.Forms.TextBox txtDepositar;
         private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.Button btAceptar;
+        private System.Windows.Forms.TextBox txtPlazo;
+        private System.Windows.Forms.Label lbPlazo;
     }
 }
 

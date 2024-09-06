@@ -39,9 +39,9 @@
             this.button1.Location = new System.Drawing.Point(56, 161);
             this.button1.Margin = new System.Windows.Forms.Padding(1);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 31);
+            this.button1.Size = new System.Drawing.Size(119, 31);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Ver números";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -68,7 +68,7 @@
             this.lb2.Name = "lb2";
             this.lb2.Size = new System.Drawing.Size(111, 16);
             this.lb2.TabIndex = 5;
-            this.lb2.Text = "Numeros del 0 al:";
+            this.lb2.Text = "Números del 0 al:";
             // 
             // Problema2Form1
             // 
@@ -81,7 +81,7 @@
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Problema2Form1";
-            this.Text = "Problema2Form1";
+            this.Text = "Problema2";
             this.Load += new System.EventHandler(this.Problema2Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
