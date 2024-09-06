@@ -12,58 +12,60 @@ namespace WindowsFormsApp3
 {
     public partial class Problema2Form1 : Form
     {
+
+        private ErrorProvider errorProvider = new ErrorProvider();
+
         public Problema2Form1()
         {
             InitializeComponent();
         }
 
-        private int i, j, y, x, numeroAlRevesInt, numeroAlDerechoInt, resultado1, resultado2;
+        private static int i, j, y, x, numeroAlRevesInt, numeroAlDerechoInt, resultado1, resultado2;
 
-        private string entrada, numeroAlRevesString, numeroAlDerechoString, inicioDerecha, inicioIzquierda;
+        private string numeroAlRevesString, numeroAlDerechoString, inicioDerecha, inicioIzquierda;
 
 
         private void button1_Click(object sender, EventArgs e)
         {
-            for (i = 0; i <= Convert.ToInt32(textBox1.Text); i++)
+
+            try
             {
-                //para cada numero natural hasta el numero del usuario
 
-                for (j = 0; j <= i; j++)
-                {   //revisar numero desde indice 0/izquierda
-
-                    inicioDerecha = Convert.ToString(i);
-                    numeroAlDerechoString += String.Join("", inicioDerecha[j]);
-                    //unir todos los caracteres del textbox de izquierda a derecha
-
-                    resultado1 = Convert.ToInt32(numeroAlDerechoString);
-
-                }
-
-                for (x = textBox1.TextLength - 1; x >= 0; x--)
-                {   //revisar numero desde el ultimo indice/derecha
-
-                    numeroAlRevesString += String.Join("", textBox1.Text[x]);
-                    //unir todos los caracteres del textbox de derecha a izquierda
-
-                    resultado2 = Convert.ToInt32(numeroAlRevesString);
-
-
-                }
-
-                if (resultado1 == resultado2)
+                for (i = 0; i <= Convert.ToInt32(textBox1.Text); i++)
                 {
-                    //si se lee igual desde derecha y desde izquierda, si es palindromo
+                    //para cada numero natural hasta el numero del usuario
 
-                    listBox2.Items.Add(i);
-                    //añadir el numero de iteracion el cual va a ser un numero palindromo
-                    numeroAlDerechoString = "";
-                    numeroAlRevesString = "";
+
+                    if (VerificarPalindromo(i))
+                    {
+                        listBox2.Items.Add(i);
+                    }
 
                 }
+            }
+            catch {
+                errorProvider.SetError(textBox1, "Solo se permiten letras.");
 
             }
+
         }
 
+
+
+        static bool VerificarPalindromo(int numero)
+        {
+            int original = numero;
+            int reverso = 0;
+
+            while (numero > 0)
+            {
+                int digito = numero % 10;
+                reverso = reverso * 10 + digito;
+                numero /= 10;
+            }
+
+            return original == reverso;
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
