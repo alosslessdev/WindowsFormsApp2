@@ -14,6 +14,7 @@ namespace WindowsFormsApp3
     public partial class Problema1 : Form
 
     {
+
         private ErrorProvider errorProvider = new ErrorProvider();
         public Problema1()
         {
@@ -63,6 +64,13 @@ namespace WindowsFormsApp3
             {
                 errorProvider.Clear();
             }
-        }    
+        }
+
+        private void Problema1_Load(object sender, EventArgs e)
+        {
+            Problema2Form1 problema2Form1 = new Problema2Form1();
+            problema2Form1.Show();
+
+        }
     }
 }

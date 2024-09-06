@@ -47,7 +47,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(144, 61);
+            this.textBox1.Location = new System.Drawing.Point(161, 58);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 3;
@@ -56,9 +56,9 @@
             // 
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(341, 76);
+            this.listBox2.Location = new System.Drawing.Point(341, 44);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(120, 84);
+            this.listBox2.Size = new System.Drawing.Size(120, 356);
             this.listBox2.TabIndex = 4;
             // 
             // label2

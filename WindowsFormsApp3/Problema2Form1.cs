@@ -19,9 +19,7 @@ namespace WindowsFormsApp3
 
         private int i, j, y, x, numeroAlRevesInt, numeroAlDerechoInt, resultado1, resultado2;
 
-
-
-        private string entrada, numeroAlRevesString, numeroAlDerechoString;
+        private string entrada, numeroAlRevesString, numeroAlDerechoString, inicioDerecha, inicioIzquierda;
 
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,10 +28,11 @@ namespace WindowsFormsApp3
             {
                 //para cada numero natural hasta el numero del usuario
 
-                for (j = 0; j <= textBox1.TextLength - 1; j++)
+                for (j = 0; j <= i; j++)
                 {   //revisar numero desde indice 0/izquierda
 
-                    numeroAlDerechoString = String.Join("", textBox1.Text[j]);
+                    inicioDerecha = Convert.ToString(i);
+                    numeroAlDerechoString += String.Join("", inicioDerecha[j]);
                     //unir todos los caracteres del textbox de izquierda a derecha
 
                     resultado1 = Convert.ToInt32(numeroAlDerechoString);
@@ -43,7 +42,7 @@ namespace WindowsFormsApp3
                 for (x = textBox1.TextLength - 1; x >= 0; x--)
                 {   //revisar numero desde el ultimo indice/derecha
 
-                    numeroAlRevesString = String.Join("", textBox1.Text[x]);
+                    numeroAlRevesString += String.Join("", textBox1.Text[x]);
                     //unir todos los caracteres del textbox de derecha a izquierda
 
                     resultado2 = Convert.ToInt32(numeroAlRevesString);
@@ -53,11 +52,12 @@ namespace WindowsFormsApp3
 
                 if (resultado1 == resultado2)
                 {
-                    //si se lee igual desde derecha y desde izquierda
+                    //si se lee igual desde derecha y desde izquierda, si es palindromo
 
-                    listBox2.Items.Add(resultado1);
-                    //no deberia importar si el numero sale de numeroAlDerechoString o de
-                    //numeroAlRevesString
+                    listBox2.Items.Add(i);
+                    //añadir el numero de iteracion el cual va a ser un numero palindromo
+                    numeroAlDerechoString = "";
+                    numeroAlRevesString = "";
 
                 }
 
