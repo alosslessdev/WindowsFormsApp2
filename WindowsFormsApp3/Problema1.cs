@@ -5,14 +5,17 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp3
 {
-    public partial class Form2 : Form
+    public partial class Problema1 : Form
+
     {
-        public Form2()
+        private ErrorProvider errorProvider = new ErrorProvider();
+        public Problema1()
         {
             InitializeComponent();
         }
@@ -47,6 +50,19 @@ namespace WindowsFormsApp3
             tbPalabra.Clear();
         }
 
-        
+        private void tbPalabra_TextChanged(object sender, EventArgs e)
+        {
+            string entrada = tbPalabra.Text;
+
+            // Regex permite unicamente el uso de letras, excluye el uso de numeros y caracters especiales.
+            if (!Regex.IsMatch(entrada, @"^[a-zA-Z]*$"))
+            {
+                errorProvider.SetError(tbPalabra, "Solo se permiten letras.");
+            }
+            else
+            {
+                errorProvider.Clear();
+            }
+        }    
     }
-} 
+}

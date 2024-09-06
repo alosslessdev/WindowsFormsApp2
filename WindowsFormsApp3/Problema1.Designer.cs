@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp3
 {
-    partial class Form2
+    partial class Problema1
     {
         /// <summary>
         /// Required designer variable.
@@ -33,13 +33,15 @@
             this.lbVocales = new System.Windows.Forms.ListBox();
             this.btMostrarVocales = new System.Windows.Forms.Button();
             this.tbPalabra = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btLimpiar
             // 
-            this.btLimpiar.Location = new System.Drawing.Point(847, 474);
+            this.btLimpiar.Location = new System.Drawing.Point(267, 167);
+            this.btLimpiar.Margin = new System.Windows.Forms.Padding(1);
             this.btLimpiar.Name = "btLimpiar";
-            this.btLimpiar.Size = new System.Drawing.Size(238, 104);
+            this.btLimpiar.Size = new System.Drawing.Size(75, 37);
             this.btLimpiar.TabIndex = 0;
             this.btLimpiar.Text = "Limpiar";
             this.btLimpiar.UseVisualStyleBackColor = true;
@@ -48,26 +50,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(160, 181);
+            this.label1.Location = new System.Drawing.Point(51, 64);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(311, 37);
+            this.label1.Size = new System.Drawing.Size(104, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ingrese una palabra:";
             // 
             // lbVocales
             // 
             this.lbVocales.FormattingEnabled = true;
-            this.lbVocales.ItemHeight = 37;
-            this.lbVocales.Location = new System.Drawing.Point(867, 116);
+            this.lbVocales.Location = new System.Drawing.Point(274, 41);
+            this.lbVocales.Margin = new System.Windows.Forms.Padding(1);
             this.lbVocales.Name = "lbVocales";
-            this.lbVocales.Size = new System.Drawing.Size(218, 263);
+            this.lbVocales.Size = new System.Drawing.Size(72, 95);
             this.lbVocales.TabIndex = 2;
             // 
             // btMostrarVocales
             // 
-            this.btMostrarVocales.Location = new System.Drawing.Point(538, 481);
+            this.btMostrarVocales.Location = new System.Drawing.Point(170, 169);
+            this.btMostrarVocales.Margin = new System.Windows.Forms.Padding(1);
             this.btMostrarVocales.Name = "btMostrarVocales";
-            this.btMostrarVocales.Size = new System.Drawing.Size(210, 91);
+            this.btMostrarVocales.Size = new System.Drawing.Size(66, 32);
             this.btMostrarVocales.TabIndex = 4;
             this.btMostrarVocales.Text = "Mostrar Vocales";
             this.btMostrarVocales.UseVisualStyleBackColor = true;
@@ -75,23 +79,36 @@
             // 
             // tbPalabra
             // 
-            this.tbPalabra.Location = new System.Drawing.Point(167, 256);
+            this.tbPalabra.Location = new System.Drawing.Point(53, 90);
+            this.tbPalabra.Margin = new System.Windows.Forms.Padding(1);
             this.tbPalabra.Name = "tbPalabra";
-            this.tbPalabra.Size = new System.Drawing.Size(304, 44);
+            this.tbPalabra.Size = new System.Drawing.Size(99, 20);
             this.tbPalabra.TabIndex = 5;
+            this.tbPalabra.TextChanged += new System.EventHandler(this.tbPalabra_TextChanged);
             // 
-            // Form2
+            // label2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(271, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Vocales";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1440, 974);
+            this.ClientSize = new System.Drawing.Size(405, 246);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.tbPalabra);
             this.Controls.Add(this.btMostrarVocales);
             this.Controls.Add(this.lbVocales);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btLimpiar);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Name = "Form1";
+            this.Text = "Problema1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,5 +121,6 @@
         private System.Windows.Forms.ListBox lbVocales;
         private System.Windows.Forms.Button btMostrarVocales;
         private System.Windows.Forms.TextBox tbPalabra;
+        private System.Windows.Forms.Label label2;
     }
 }
