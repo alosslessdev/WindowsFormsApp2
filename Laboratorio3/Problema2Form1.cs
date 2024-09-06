@@ -17,7 +17,7 @@ namespace Laboratorio3
 {
     public partial class Problema2Form1 : Form
     {
-
+//sdkhfjdsjoñ
         private ErrorProvider errorProvider = new ErrorProvider();
 
         public Problema2Form1()
