@@ -10,16 +10,20 @@ using System.Windows.Forms;
 
 namespace Lab_3
 {
-    public partial class lbLab3 : Form
+//Carrasco, Nathan
+//Herrera, Francisco
+//Wu, Iván
+	
+    public partial class LbLab3 : Form
     {
-        public lbLab3()
+        public LbLab3()
         {
             InitializeComponent();
 
         }
 
 
-        private void label4_Click(object sender, EventArgs e)
+        private void lb4_Click(object sender, EventArgs e)
         {
 
         }

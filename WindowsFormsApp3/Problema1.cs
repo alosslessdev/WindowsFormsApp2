@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab_3;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,6 +12,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp3
 {
+	
+//Carrasco, Nathan
+//Herrera, Francisco
+//Wu, Iván
+	
     public partial class Problema1 : Form
 
     {
@@ -70,6 +76,8 @@ namespace WindowsFormsApp3
         {
             Problema2Form1 problema2Form1 = new Problema2Form1();
             problema2Form1.Show();
+            LbLab3 lbLab3 = new LbLab3();
+            lbLab3.Show();
 
         }
     }

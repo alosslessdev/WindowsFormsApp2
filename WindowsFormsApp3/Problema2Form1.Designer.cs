@@ -31,7 +31,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lb2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -61,27 +61,28 @@
             this.listBox2.Size = new System.Drawing.Size(120, 356);
             this.listBox2.TabIndex = 4;
             // 
-            // label2
+            // lb2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 16);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Numeros del 0 al:";
+            this.lb2.AutoSize = true;
+            this.lb2.Location = new System.Drawing.Point(44, 61);
+            this.lb2.Name = "lb2";
+            this.lb2.Size = new System.Drawing.Size(111, 16);
+            this.lb2.TabIndex = 5;
+            this.lb2.Text = "Numeros del 0 al:";
             // 
             // Problema2Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 429);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lb2);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Problema2Form1";
             this.Text = "Problema2Form1";
+            this.Load += new System.EventHandler(this.Problema2Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -92,7 +93,7 @@
         private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lb2;
     }
 }
 

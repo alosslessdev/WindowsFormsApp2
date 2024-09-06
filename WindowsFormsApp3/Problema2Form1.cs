@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab_3;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
+//Carrasco, Nathan
+//Herrera, Francisco
+//Wu, Iván
 
 namespace WindowsFormsApp3
 {
@@ -21,6 +26,11 @@ namespace WindowsFormsApp3
         }
 
         private static int i, j, y, x, numeroAlRevesInt, numeroAlDerechoInt, resultado1, resultado2;
+
+        private void Problema2Form1_Load(object sender, EventArgs e)
+        {
+
+        }
 
         private string numeroAlRevesString, numeroAlDerechoString, inicioDerecha, inicioIzquierda;
 
@@ -67,7 +77,7 @@ namespace WindowsFormsApp3
             return original == reverso;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void lb1_Click(object sender, EventArgs e)
         {
 
         }

@@ -1,6 +1,6 @@
 ﻿namespace Lab_3
 {
-    partial class lbLab3
+    partial class LbLab3
     {
         /// <summary>
         /// Required designer variable.
@@ -77,7 +77,7 @@
             this.lbDepositar.Size = new System.Drawing.Size(91, 20);
             this.lbDepositar.TabIndex = 3;
             this.lbDepositar.Text = "Depositar";
-            this.lbDepositar.Click += new System.EventHandler(this.label4_Click);
+            this.lbDepositar.Click += new System.EventHandler(this.lb4_Click);
             // 
             // txtNombre
             // 

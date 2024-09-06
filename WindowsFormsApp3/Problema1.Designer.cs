@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.btLimpiar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb1 = new System.Windows.Forms.Label();
             this.lbVocales = new System.Windows.Forms.ListBox();
             this.btMostrarVocales = new System.Windows.Forms.Button();
             this.tbPalabra = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lb2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btLimpiar
@@ -47,15 +47,15 @@
             this.btLimpiar.UseVisualStyleBackColor = true;
             this.btLimpiar.Click += new System.EventHandler(this.btLimpiar_Click);
             // 
-            // label1
+            // lb1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 79);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Ingrese una palabra:";
+            this.lb1.AutoSize = true;
+            this.lb1.Location = new System.Drawing.Point(68, 79);
+            this.lb1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lb1.Name = "lb1";
+            this.lb1.Size = new System.Drawing.Size(130, 16);
+            this.lb1.TabIndex = 1;
+            this.lb1.Text = "Ingrese una palabra:";
             // 
             // lbVocales
             // 
@@ -87,26 +87,26 @@
             this.tbPalabra.TabIndex = 5;
             this.tbPalabra.TextChanged += new System.EventHandler(this.tbPalabra_TextChanged);
             // 
-            // label2
+            // lb2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(361, 33);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 16);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Vocales";
+            this.lb2.AutoSize = true;
+            this.lb2.Location = new System.Drawing.Point(361, 33);
+            this.lb2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb2.Name = "lb2";
+            this.lb2.Size = new System.Drawing.Size(57, 16);
+            this.lb2.TabIndex = 6;
+            this.lb2.Text = "Vocales";
             // 
             // Problema1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(540, 303);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lb2);
             this.Controls.Add(this.tbPalabra);
             this.Controls.Add(this.btMostrarVocales);
             this.Controls.Add(this.lbVocales);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lb1);
             this.Controls.Add(this.btLimpiar);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Problema1";
@@ -120,10 +120,10 @@
         #endregion
 
         private System.Windows.Forms.Button btLimpiar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb1;
         private System.Windows.Forms.ListBox lbVocales;
         private System.Windows.Forms.Button btMostrarVocales;
         private System.Windows.Forms.TextBox tbPalabra;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lb2;
     }
 }
