@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp3
+namespace Laboratorio3
 {
 	
 //Carrasco, Nathan

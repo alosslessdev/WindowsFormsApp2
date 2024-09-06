@@ -13,7 +13,7 @@ using System.Windows.Forms;
 //Herrera, Francisco
 //Wu, Iván
 
-namespace WindowsFormsApp3
+namespace Laboratorio3
 {
     public partial class Problema2Form1 : Form
     {
@@ -35,7 +35,7 @@ namespace WindowsFormsApp3
         private string numeroAlRevesString, numeroAlDerechoString, inicioDerecha, inicioIzquierda;
 
 
-        private void button1_Click(object sender, EventArgs e)
+        private void botonVer_Click(object sender, EventArgs e)
         {
 
             try

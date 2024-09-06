@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp3
+﻿namespace Laboratorio3
 {
     partial class Problema2Form1
     {
@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.botonVer = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.lb2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // botonVer
             // 
-            this.button1.Location = new System.Drawing.Point(56, 161);
-            this.button1.Margin = new System.Windows.Forms.Padding(1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 31);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Ver números";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.botonVer.Location = new System.Drawing.Point(56, 161);
+            this.botonVer.Margin = new System.Windows.Forms.Padding(1);
+            this.botonVer.Name = "botonVer";
+            this.botonVer.Size = new System.Drawing.Size(119, 31);
+            this.botonVer.TabIndex = 0;
+            this.botonVer.Text = "Ver números";
+            this.botonVer.UseVisualStyleBackColor = true;
+            this.botonVer.Click += new System.EventHandler(this.botonVer_Click);
             // 
             // textBox1
             // 
@@ -78,7 +78,7 @@
             this.Controls.Add(this.lb2);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.botonVer);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Problema2Form1";
             this.Text = "Problema2";
@@ -90,7 +90,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button botonVer;
 		private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label lb2;

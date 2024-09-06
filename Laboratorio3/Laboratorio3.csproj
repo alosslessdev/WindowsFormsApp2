@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{984DD521-A392-46D0-AA28-219EC0CA05F9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormsApp3</RootNamespace>
-    <AssemblyName>WindowsFormsApp3</AssemblyName>
+    <RootNamespace>Laboratorio3</RootNamespace>
+    <AssemblyName>Laboratorio3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

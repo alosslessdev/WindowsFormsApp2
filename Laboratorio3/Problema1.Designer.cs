@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp3
+﻿namespace Laboratorio3
 {
     partial class Problema1
     {
