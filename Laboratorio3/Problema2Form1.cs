@@ -41,7 +41,7 @@ namespace Laboratorio3
             try
             {
 
-                for (i = 0; i <= Convert.ToInt32(textBox1.Text); i++)
+                for (i = 0; i <= Convert.ToInt32(txtNumero.Text); i++)
                 {
                     //para cada numero natural hasta el numero del usuario
 
@@ -54,7 +54,7 @@ namespace Laboratorio3
                 }
             }
             catch {
-                errorProvider.SetError(textBox1, "Solo se permiten letras.");
+                errorProvider.SetError(txtNumero, "Solo se permiten letras.");
 
             }
 
@@ -82,7 +82,7 @@ namespace Laboratorio3
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txtNumero_TextChanged(object sender, EventArgs e)
         {
 
 

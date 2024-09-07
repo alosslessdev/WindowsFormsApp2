@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.botonVer = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.lb2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -45,12 +45,12 @@
             this.botonVer.UseVisualStyleBackColor = true;
             this.botonVer.Click += new System.EventHandler(this.botonVer_Click);
             // 
-            // textBox1
+            // txtNumero
             // 
-            this.textBox1.Location = new System.Drawing.Point(161, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 3;
+            this.txtNumero.Location = new System.Drawing.Point(161, 58);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(100, 22);
+            this.txtNumero.TabIndex = 3;
             // 
             // listBox2
             // 
@@ -77,7 +77,7 @@
             this.ClientSize = new System.Drawing.Size(599, 429);
             this.Controls.Add(this.lb2);
             this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.botonVer);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Problema2Form1";
@@ -91,7 +91,7 @@
         #endregion
 
         private System.Windows.Forms.Button botonVer;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label lb2;
     }
