@@ -30,7 +30,7 @@
         {
             this.botonVer = new System.Windows.Forms.Button();
             this.txtNumero = new System.Windows.Forms.TextBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.listaResultado = new System.Windows.Forms.ListBox();
             this.lb2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -52,14 +52,14 @@
             this.txtNumero.Size = new System.Drawing.Size(100, 22);
             this.txtNumero.TabIndex = 3;
             // 
-            // listBox2
+            // listaResultado
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(341, 44);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(120, 356);
-            this.listBox2.TabIndex = 4;
+            this.listaResultado.FormattingEnabled = true;
+            this.listaResultado.ItemHeight = 16;
+            this.listaResultado.Location = new System.Drawing.Point(341, 44);
+            this.listaResultado.Name = "listaResultado";
+            this.listaResultado.Size = new System.Drawing.Size(120, 356);
+            this.listaResultado.TabIndex = 4;
             // 
             // lb2
             // 
@@ -76,7 +76,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 429);
             this.Controls.Add(this.lb2);
-            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.listaResultado);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.botonVer);
             this.Margin = new System.Windows.Forms.Padding(1);
@@ -92,7 +92,7 @@
 
         private System.Windows.Forms.Button botonVer;
 		private System.Windows.Forms.TextBox txtNumero;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox listaResultado;
         private System.Windows.Forms.Label lb2;
     }
 }

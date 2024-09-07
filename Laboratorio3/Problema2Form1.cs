@@ -48,7 +48,7 @@ namespace Laboratorio3
 
                     if (VerificarPalindromo(i))
                     {
-                        listBox2.Items.Add(i);
+                        listaResultado.Items.Add(i);
                     }
 
                 }
