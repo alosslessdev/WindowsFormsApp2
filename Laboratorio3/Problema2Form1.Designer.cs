@@ -82,7 +82,6 @@
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Problema2Form1";
             this.Text = "Problema2";
-            this.Load += new System.EventHandler(this.Problema2Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

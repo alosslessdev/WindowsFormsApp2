@@ -26,18 +26,10 @@ namespace Laboratorio3
         }
 
         private static int i, j, y, x, numeroAlRevesInt, numeroAlDerechoInt, resultado1, resultado2;
-
-        private void Problema2Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private string numeroAlRevesString, numeroAlDerechoString, inicioDerecha, inicioIzquierda;
-
 
         private void botonVer_Click(object sender, EventArgs e)
         {
-
             try
             {
 
@@ -57,10 +49,7 @@ namespace Laboratorio3
                 errorProvider.SetError(txtNumero, "Solo se permiten letras.");
 
             }
-
         }
-
-
 
         static bool VerificarPalindromo(int numero)
         {
@@ -75,17 +64,6 @@ namespace Laboratorio3
             }
 
             return original == reverso;
-        }
-
-        private void lb1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNumero_TextChanged(object sender, EventArgs e)
-        {
-
-
         }
     }
 }

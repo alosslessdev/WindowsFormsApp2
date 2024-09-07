@@ -155,7 +155,6 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "LbLab3";
             this.Text = "Laboratorio #3 Ciclos de repetición";
-            this.Load += new System.EventHandler(this.LbLab3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

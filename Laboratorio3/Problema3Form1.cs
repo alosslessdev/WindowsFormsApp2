@@ -92,9 +92,5 @@ namespace Lab_3
             }
         }
 
-        private void LbLab3_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
